@@ -18,6 +18,7 @@ include ('system/loginsession_tester.php');
 <div class="headdiv">
   <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 30px;" href="abwesenheit_hinzufuegen.php">Abwesenheit eintragen</a> 
   <a id="button_nav" style="text-decoration: none;" href="logout.php">Logout</a>
+  <a id="button_nav" style="text-decoration: none;" href="team.php">Team</a>
 </div>
 
 <div class="maindiv">
@@ -26,3 +27,19 @@ include ('system/loginsession_tester.php');
 
 </body>
 </html>
+
+<?php
+
+/*<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titel</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+*/
+?>

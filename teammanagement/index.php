@@ -16,5 +16,6 @@ include ('system/loginsession_tester.php');
 <body>
 <a href="logout.php">Logout</a>
 <a href="abwesenheit_hinzufuegen.php">Abwesenheit eintragen</a>
+<a href="team.php">Team</a>
 </body>
 </html>

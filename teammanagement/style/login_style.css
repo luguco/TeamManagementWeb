@@ -1,0 +1,50 @@
+body {
+  background-image: url('../grafiken/colored_bg.png') ;
+  background-size: 3000px 1500px;
+}
+
+.maindiv {
+  background-color: #302F2F;
+  border-color: #302F2F;
+  height: 400px;
+  width: 30%;
+  margin: 100px auto 0px auto;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+#button_blue {
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 35px 3px 35px;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#button_blue:hover {
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 35px 3px 35px;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#title {
+  color: white;
+  margin: 40px 0px 0px 40px;
+}
+
+#titleinfo {
+  color: white;
+  margin: 5px 0px 0px 40px;
+  font-size: 16px;
+}

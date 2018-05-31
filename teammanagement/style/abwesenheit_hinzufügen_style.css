@@ -1,0 +1,74 @@
+body {
+  background-image: url('../grafiken/colored_bg.png') ;
+  background-size: 3000px 1500px;
+}
+
+.maindiv {
+  background-color: #302F2F;
+  border-color: #302F2F;
+  height: 400px;
+  width: 30%;
+  margin: 100px auto 0px auto;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+#button_blue {
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 35px 3px 35px;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#button_blue:hover {
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 35px 3px 35px;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#button_red {
+  background-color: orangered;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 25px 3px 25px;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#button_red:hover {
+  background-color: orangered;
+  font-size: 20px;
+  color: white;
+  border-style: dotted;
+  border-width: 4px;
+  border-radius: 8px;
+  padding: 3px 25px 3px 25px;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+  transition: 300ms;
+}
+
+#info_p {
+  color: white; 
+  margin: 80px 0px 0px 40px;
+  width: 78%;
+  border-color: white; 
+  border-style: solid; 
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
+}

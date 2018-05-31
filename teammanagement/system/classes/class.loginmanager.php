@@ -7,9 +7,10 @@
  */
 
 namespace system\classes;
-ini_set('display_errors','1');
-error_reporting(E_ALL) ;
+ini_set('display_errors', '1');
+error_reporting(E_ALL);
 include_once('database_connector.php');
+
 class loginmanager
 {
 

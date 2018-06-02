@@ -21,12 +21,9 @@ include ('system/classes/class.absencemanager.php')
     <title>Titel</title>
 </head>
 <body>
-<div class="headdiv">
-    <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 30px;" href="abwesenheit_hinzufuegen.php">Abwesenheit eintragen</a>
-    <a id="button_nav" style="text-decoration: none;" href="logout.php">Logout</a>
-    <a id="button_nav" style="text-decoration: none;" href="team.php">Team</a>
-    <a id="button_nav" style="text-decoration: none;" href="alle_abwesenheiten.php">Alle Abwesenheiten</a>
-</div>
+<?php
+include ('backend_handler/header.php');
+?>
 
 <div class="maindiv">
     <table>

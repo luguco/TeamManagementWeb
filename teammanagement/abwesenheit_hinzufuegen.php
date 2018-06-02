@@ -11,6 +11,7 @@ include('system/loginsession_tester.php');
     <link rel="stylesheet" href="style/main_style.css">
     <link rel="stylesheet" href="style/text_style.css">
     <link rel="stylesheet" href="style/abwesenheit_hinzufügen_style.css">
+    <link rel="stylesheet" href="style/header_style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -23,16 +24,19 @@ include('system/loginsession_tester.php');
     </script>
 </head>
 <body>
-<!--
-<div><?php
-session_start();
-$err = $_SESSION['error'];
-if (!is_null($err)) {
-    echo '<label id="errmsg"><br>' . $err . '</label>';
-    $_SESSION['error'] = null;
+
+<?php
+include ('backend_handler/header.php');
+?>
+<?php
+if(isset($_SESSION['error'])) {
+    $err = $_SESSION['error'];
+    if (!is_null($err)) {
+        echo '<label id="errmsg"><br>' . $err . '</label>';
+        $_SESSION['error'] = null;
+    }
 }
-?></div>
--->
+?>
 
 <div class="maindiv">
     <form method="post" action="backend_handler/absence_manager.php">
@@ -46,6 +50,5 @@ if (!is_null($err)) {
     <p id="info_p">Mit dieser Funktion blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla
         blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla</p>
 </div>
-
 </body>
 </html>

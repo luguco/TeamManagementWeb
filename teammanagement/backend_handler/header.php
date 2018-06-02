@@ -4,4 +4,5 @@
         <a id="button_nav" style="text-decoration: none;" href="logout.php">Logout</a>
         <a id="button_nav" style="text-decoration: none;" href="team.php">Team</a>
         <a id="button_nav" style="text-decoration: none;" href="alle_abwesenheiten.php">Alle Abwesenheiten</a>
+        <a id="button_nav" style="text-decoration: none;" href="index.php">Home</a>
     </div>

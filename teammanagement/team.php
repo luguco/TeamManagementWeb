@@ -11,15 +11,15 @@ error_reporting(E_ALL);
 
 include('system/loginsession_tester.php');
 include_once('system/classes/database_connector.php');
-
 ?>
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style/index_style.css">
     <link rel="stylesheet" href="style/header_style.css">
+    <link rel="stylesheet" href="style/team_style.css">
 </head>
 <body>
   <div class="logodiv">
@@ -49,7 +49,7 @@ include_once('system/classes/database_connector.php');
       $eg = $stmt->fetchAll();
 
       foreach ($eg as $rw) {
-          echo "<dd>-<a href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
+          echo "<dd><a href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
       }
   }
   echo "</dl>\n";

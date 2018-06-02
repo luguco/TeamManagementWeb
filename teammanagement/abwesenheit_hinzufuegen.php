@@ -23,11 +23,6 @@ include('system/loginsession_tester.php');
     </script>
 </head>
 <body>
-
-<?php
-include ('backend_handler/header.php');
-?>
-
 <!--
 <div><?php
 session_start();

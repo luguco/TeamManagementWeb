@@ -19,34 +19,41 @@ include_once('system/classes/database_connector.php');
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/index_style.css">
+    <link rel="stylesheet" href="style/header_style.css">
 </head>
 <body>
-<?php
-include ('backend_handler/header.php');
-?>
+  <div class="logodiv">
+    <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+  </div> 
+  <div class="headdiv">
+      <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 30px;" href="abwesenheit_hinzufuegen.php">Abwesenheit
+          eintragen</a>
+      <a id="button_nav" style="text-decoration: none;" href="logout.php">Logout</a>
+      <a id="button_nav" style="text-decoration: none;" href="team.php">Team</a>
+  </div>
 
-    <div class="maindiv">
-    <?php
-    echo "<dl>\n";
-    $gdbh = globaldb();
-    $stmt = $gdbh->prepare("SELECT Name FROM Groups");
-    $stmt->execute();
+  <div class="maindiv">
+  <?php
+  echo "<dl>\n";
+  $gdbh = globaldb();
+  $stmt = $gdbh->prepare("SELECT Name FROM Groups");
+  $stmt->execute();
 
-    $erg = $stmt->fetchAll();
-    foreach ($erg as $row) {
-        echo "<dt>" . $row['Name'] . "</dt>\n";
+  $erg = $stmt->fetchAll();
+  foreach ($erg as $row) {
+      echo "<dt>" . $row['Name'] . "</dt>\n";
 
-        $stmt = $gdbh->prepare("SELECT User.Username FROM Groups, User, GroupPlayer WHERE GroupPlayer.G_ID = Groups.G_ID AND GroupPlayer.P_ID = User.UUID AND Groups.Name = :Group");
-        $stmt->bindParam(":Group", $row['Name']);
-        $stmt->execute();
-        $eg = $stmt->fetchAll();
+      $stmt = $gdbh->prepare("SELECT User.Username FROM Groups, User, GroupPlayer WHERE GroupPlayer.G_ID = Groups.G_ID AND GroupPlayer.P_ID = User.UUID AND Groups.Name = :Group");
+      $stmt->bindParam(":Group", $row['Name']);
+      $stmt->execute();
+      $eg = $stmt->fetchAll();
 
-        foreach ($eg as $rw) {
-            echo "<dd>-<a href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
-        }
-    }
-    echo "</dl>\n";
-    ?>
-    </div>
+      foreach ($eg as $rw) {
+          echo "<dd>-<a href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
+      }
+  }
+  echo "</dl>\n";
+  ?>
+  </div>
 </body>
 </html>

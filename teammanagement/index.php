@@ -9,36 +9,27 @@ include('system/loginsession_tester.php');
     <!DOCTYPE html>
     <html lang="de">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="style/index_style.css">
-        <title>Titel</title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="stylesheet" href="style/index_style.css">
+      <link rel="stylesheet" href="style/header_style.css">
+      <title>Titel</title>
     </head>
     <body>
-    <?php
-    include ('backend_handler/header.php');
-    ?>
+    <div class="logodiv">
+      <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+    </div>
+    <div class="headdiv">
+      <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 30px;" href="abwesenheit_hinzufuegen.php">Abwesenheit eintragen</a>
+      <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 0px;" href="logout.php">Logout</a>
+      <a id="button_nav" style="text-decoration: none; margin: 0px 5px 0px 0px;" href="team.php">Team</a>
+      <a id="button_nav" style="text-decoration: none;" href="alle_abwesenheiten.php">Alle Abwesenheiten</a>
+    </div>
 
     <div class="maindiv">
-        <!--  Hier die Anwesenheits Übersicht und so yk-->
+<!--        Infos zum Tool und so..       -->
     </div>
 
     </body>
     </html>
-
 <?php
-
-/*
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Titel</title>
-  </head>
-  <body>
-
-  </body>
-</html>
-*/
-?>

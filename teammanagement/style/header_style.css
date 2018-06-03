@@ -24,7 +24,7 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
-#button_nav {
+.button_nav {
   background-color: DeepSkyBlue;
   color: white;
   border-style: solid;
@@ -34,6 +34,6 @@ body {
   padding: 10px 4px 10px 4px;
 }
 
-#button_nav:hover {
+.button_nav:hover {
   box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
 }

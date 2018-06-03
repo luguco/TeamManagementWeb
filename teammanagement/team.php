@@ -20,6 +20,7 @@ include_once('system/classes/database_connector.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/header_style.css">
     <link rel="stylesheet" href="style/team_style.css">
+    <title>Team</title>
 </head>
 <body>
 <?php

@@ -28,13 +28,14 @@ include ('backend_handler/header.php');
 ?>
 <div class="maindiv">
     <?php
+
+    include('backend_handler/team/listgroups.php');
+
     if(isset($_GET['user'])){
-
     }  else if(isset($_GET['group'])){
-
-    }else {
-        include ('backend_handler/team/listall.php');
+        include "backend_handler/team/listgroupdetail.php";
     }
+
     ?>
 </div>
 </body>

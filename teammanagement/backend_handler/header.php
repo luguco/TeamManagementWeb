@@ -11,7 +11,6 @@
     color: white;
     fonz-size: 24px;
     border-style: solid;
-    border-bottom-style: dotted;
     border-width: 1px;
     border-left-width: 10px;
     border-radius: 4px;

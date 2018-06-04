@@ -21,7 +21,7 @@ class loginmanager
 
         $dgbh = globaldb();
 
-        $stmt = $dgbh->prepare('SELECT * FROM user WHERE username = :Username');
+        $stmt = $dgbh->prepare('SELECT * FROM User WHERE Username = :Username');
         $stmt->bindParam(":Username", $username);
         $stmt->execute();
         if ($stmt->rowCount() != 1) return "Benutzername inkorrekt";
@@ -66,7 +66,7 @@ class loginmanager
     {
         $gdbh = globaldb();
 
-        $stmt = $gdbh->prepare('UPDATE user SET trys = trys - 1 WHERE username = :Username');
+        $stmt = $gdbh->prepare('UPDATE User SET Trys = Trys - 1 WHERE Username = :Username');
         $stmt->bindParam(":Username", $username);
         $stmt->execute();
 
@@ -76,7 +76,7 @@ class loginmanager
     {
         $gdbh = globaldb();
 
-        $stmt = $gdbh->prepare('UPDATE user SET trys = 3 WHERE username = :Username');
+        $stmt = $gdbh->prepare('UPDATE User SET Trys = 3 WHERE Username = :Username');
         $stmt->bindParam(":Username", $username);
         $stmt->execute();
     }
@@ -85,7 +85,7 @@ class loginmanager
     {
         $gdbh = globaldb();
 
-        $stmt = $gdbh->prepare('SELECT trys FROM user WHERE username = :Username');
+        $stmt = $gdbh->prepare('SELECT Trys FROM User WHERE Username = :Username');
         $stmt->bindParam(":Username", $username);
         $stmt->execute();
         if ($stmt->rowCount() == 1) {

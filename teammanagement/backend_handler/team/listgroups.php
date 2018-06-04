@@ -25,7 +25,7 @@ foreach ($erg as $row) {
     $stmt->execute();
     $res = $stmt->fetch();
 
-    echo "          <dt style='background-color: " . $res['Colorhash'] . "'><a href='team.php?group=" . $row['Name'] . "'>" . $row['Name'] . "</a></dt>\n";
+    echo "          <dt style='background-color: " . $res['Colorhash'] . "'><a id='group_txt' href='team.php?group=" . $row['Name'] . "'>" . $row['Name'] . "</a></dt>\n";
 }
 
 

@@ -16,27 +16,25 @@ include_once('system/classes/database_connector.php');
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="style/header_style.css">
-    <link rel="stylesheet" href="style/team_style.css">
-    <title>Team</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style/header_style.css">
+  <link rel="stylesheet" href="style/team_style.css">
+  <title>Team</title>
 </head>
 <body>
 <?php
-include ('backend_handler/header.php');
+  include ('backend_handler/header.php');
 ?>
 <div class="maindiv">
-    <?php
-
+  <?php
     include('backend_handler/team/listgroups.php');
 
     if(isset($_GET['user'])){
     }  else if(isset($_GET['group'])){
         include "backend_handler/team/listgroupdetail.php";
     }
-
-    ?>
+  ?>
 </div>
 </body>
 </html>

@@ -26,9 +26,6 @@ include('system/loginsession_tester.php');
 <body>
 
 <?php
-include ('backend_handler/header.php');
-?>
-<?php
 if(isset($_SESSION['error'])) {
     $err = $_SESSION['error'];
     if (!is_null($err)) {

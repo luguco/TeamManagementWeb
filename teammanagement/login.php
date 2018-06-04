@@ -22,7 +22,9 @@ if (!is_null($err)) {
 }
 ?></div>
 -->
-
+<div class="logodiv">
+    <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+</div>
 <div class="maindiv">
   <h1 id="title">Pixl-Gaming</h1>
   <h2 id="titleinfo">Team Aktivitäten</h2>
@@ -31,6 +33,8 @@ if (!is_null($err)) {
       <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="password" name="password" id="password" class="fieldlogin" placeholder="Password" required minlength="6"><br>
       <input id="button_blue" style ="margin: 10px 0px 0px 40px;" type="submit" name="login" id="login" class="loginbutton" value="Login"><br>
   </form>
+  
+  <p style="color: white; margin: 50px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | c2018</p>
 </div>
 </body>
 </html>

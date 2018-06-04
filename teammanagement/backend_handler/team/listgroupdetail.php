@@ -18,12 +18,12 @@ $stmt->execute();
 $eg = $stmt->fetchAll();
 
 $stmt = $gdbh->prepare("SELECT Colors.Colorhash FROM Colors, Groups WHERE Colors.Colorname = Groups.Usercolor AND Groups.Name = :Group");
-$stmt->bindParam(":Group", $row['Name']);
+$stmt->bindParam(":Group", $_GET['group']);
 $stmt->execute();
 $res = $stmt->fetch();
 
 foreach ($eg as $rw) {
-    echo "          <dd style='background-color: " . $res['Colorhash'] . "'><a href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
+    echo "<dd style='background-color: " . $res['Colorhash'] . "'><a id='users_txt' href='team.php?user=" . $rw['Username'] . "'>" . $rw['Username'] . "</a></dd>\n";
 }
 
 echo "        </dl>\n";

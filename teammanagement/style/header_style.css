@@ -30,9 +30,11 @@ body {
   color: white;
   border-style: solid;
   border-width: 1px;
+  border-top-width: 5px;
   border-radius: 4px 4px 0px 0px;
   border-color: deepskyblue;
-  padding: 10px 4px 10px 4px;
+  border-top-color: #0093D3;
+  padding: 8px 4px 10px 4px;
   float: left;
 }
 

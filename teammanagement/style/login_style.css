@@ -28,24 +28,19 @@ body {
   background-color: DeepSkyBlue;
   font-size: 20px;
   color: white;
-  border-style: dotted;
-  border-width: 4px;
-  border-radius: 8px;
-  padding: 3px 35px 3px 35px;
-  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
-  transition: 300ms;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-color: #0093D3;
+  border-radius: 5px;
+  padding: 3px 45px 3px 45px;
+  transition: 500ms;
 }
 
 #button_blue:hover {
-  background-color: DeepSkyBlue;
-  font-size: 20px;
-  color: white;
-  border-style: dotted;
-  border-width: 4px;
-  border-radius: 8px;
-  padding: 3px 35px 3px 35px;
-  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
-  transition: 300ms;
+  border-color: deepskyblue;
+  transition: 500ms;
 }
 
 #title {

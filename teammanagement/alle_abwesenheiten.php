@@ -20,7 +20,8 @@ include ('system/classes/class.absencemanager.php')
   <link rel="stylesheet" href="style/index_style.css">
   <link rel="stylesheet" href="style/alle_abwesenheiten.css">
   <link rel="stylesheet" href="style/header_style.css">
-  <title>Titel</title>
+  <title>Pixl-Planning | Abwesenheiten</title>
+  <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 </head>
 <body>
 <?php

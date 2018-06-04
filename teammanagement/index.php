@@ -13,20 +13,21 @@ include('system/loginsession_tester.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/index_style.css">
     <link rel="stylesheet" href="style/header_style.css">
-    <title>Titel</title>
+    <title>Pixl-Planning | Home</title>
+    <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 </head>
 <body>
+ 
   <?php
-  include ('backend_handler/header.php');
+    include ('backend_handler/header.php');
   ?>
 
   <div class="maindiv">
-  <!--  Hier die Anwesenheits Übersicht und so yk-->
-  Das hier ist die Hauptseite
-  
-  
-    <p style="color: white; margin: 450px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | c2018</p>
+    <h1 id="ueberinfo1">Willkommen, <?php echo $_SESSION['username']?></h1>
+    <p id="p_blue">Das Pixl Team- und Projektmanagement System erlaubt es dir, wie der Name schon sagt, logisch und einfach dein Team und dessen Projekte zu verwalten.</p>
+    
+    <p id="p_orange">Funktionen, wie immer über die aktuellsten Abwesenheiten der Teammitglieder bescheid zu wissen, oder deren aktuellen Aufgaben aktiv zu verfolgen, vereinfachen den Workflow enorm. <br> Geplant sind aktuell viele Funktionen, wie Rangverwaltungen mit Rechtesystem, ein Ticketsystem für die einfache und produktive interne Struktur und weitere nützliche Helfersysteme.</p>
+    <p id="p_green">Pixl-Planning by Luguco and LaetzPlaey | &copy;2018 by Pixl-Gaming | V0.3.1</p>
   </div>
-
 </body>
 </html>

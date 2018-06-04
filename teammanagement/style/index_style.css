@@ -1,11 +1,62 @@
 .maindiv {
   background-color: #302F2F;
   border-color: #302F2F;
-  height: 500px;
   width: 80%;
   min-width: 800px;
   margin: 10px auto 0px auto;
   border-style: solid;
   border-width: 2px;
   border-radius: 0px 0px 20px 20px;
+}
+
+#p_blue {
+  color: white;
+  fonz-size: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 10px;
+  border-radius: 4px;
+  background-color: deepskyblue;
+  border-color: deepskyblue;
+  border-left-color: #0093D3;  
+  width: 60%;
+  margin: 0px auto 25px auto;
+  padding: 10px;
+}
+
+#p_orange {
+  color: white;
+  fonz-size: 24px;
+  border-style: solid;
+  border-bottom-style: dotted;
+  border-width: 1px;
+  border-left-width: 10px;
+  border-radius: 4px;
+  background-color: orange;
+  border-color: orange;
+  border-left-color: #DE8400;  
+  width: 60%;
+  margin: 0px auto 25px auto;
+  padding: 10px;
+}
+
+#p_green {
+  color: white;
+  fonz-size: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 10px;
+  border-radius: 4px;
+  background-color: green;
+  border-color: green;
+  border-left-color: #005900;  
+  width: 60%;
+  margin: 0px auto 25px auto;
+  padding: 10px;
+}
+
+#ueberinfo1 {
+  color: white;
+  margin: 25px auto 25px auto;
+  width: 380px;
 }

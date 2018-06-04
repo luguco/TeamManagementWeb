@@ -17,7 +17,7 @@
             $( "#datepicker_begin" ).datepicker();
             $( "#datepicker_end" ).datepicker();
         } );
-    </script>1
+    </script>
 </head>
 <body>
 <?php

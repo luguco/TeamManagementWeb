@@ -1,23 +1,30 @@
 .maindiv {
-  background-color: #302F2F;
-  border-color: #302F2F;
-  height: 570px;
+  height: 500px;
   width: 80%;
   min-width: 800px;
   margin: 10px auto 0px auto;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 0px 0px 20px 20px;
 }
 
 #groups {
-  width: 28%;
   float: left;
+  background-color: #302F2F;
+  border-color: #302F2F;
+  border-width: 1px;
+  border-right-width: 20px;
+  border-style: solid;
+  border-radius: 0px 0px 20px 20px;
+  margin: 0px 0px 0px 0px;
 }
 
 #users {
-  width: 70%;
   float: right;
+  background-color: #302F2F;
+  border-color: #302F2F;
+  border-width: 1px;
+  border-right-width: 20px;
+  border-style: solid;
+  border-radius: 0px 0px 20px 20px;
+  width: 65%;
 }
 
 dt {
@@ -32,7 +39,7 @@ dt {
 dd {
   width: 200px;
   height: 25px;
-  margin: 0px 20px 10px 0px;
+  margin: 0px 0px 10px 20px;
   text-align: center;
   line-height: 25px;
   float: left;

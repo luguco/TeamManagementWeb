@@ -20,21 +20,22 @@ include_once('system/classes/database_connector.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="style/header_style.css">
   <link rel="stylesheet" href="style/team_style.css">
-  <title>Team</title>
+  <title>Pixl-Planning | Team</title>
+  <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 </head>
 <body>
-<?php
-  include ('backend_handler/header.php');
-?>
-<div class="maindiv">
   <?php
-    include('backend_handler/team/listgroups.php');
-
-    if(isset($_GET['user'])){
-    }  else if(isset($_GET['group'])){
-        include "backend_handler/team/listgroupdetail.php";
-    }
+    include ('backend_handler/header.php');
   ?>
-</div>
+  <div class="maindiv">
+    <?php
+      include('backend_handler/team/listgroups.php');
+
+      if(isset($_GET['user'])){
+      }  else if(isset($_GET['group'])){
+          include "backend_handler/team/listgroupdetail.php";
+      }
+    ?>
+  </div>
 </body>
 </html>

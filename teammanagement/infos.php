@@ -8,7 +8,7 @@ include('system/loginsession_tester.php');
 ?>
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="style/infos_style.css">
@@ -17,16 +17,20 @@ include('system/loginsession_tester.php');
     <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 </head>
 <body>
- 
-  <?php
-    include ('backend_handler/header.php');
-  ?>
 
-  <div class="maindiv">
+<?php
+include('backend_handler/header.php');
+?>
+
+<div class="maindiv">
     <h1 id="ueberinfo1">Aktuelle Informationen</h1>
-    <p id="p_blue">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p> 
+
+
+    <p id="p_blue">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
     <p id="p_orange">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
     <p id="p_green">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
-  </div>
+
+
+</div>
 </body>
 </html>

@@ -5,6 +5,7 @@
  * Date: 31.05.2018
  * Time: 19:03
  */
+
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
@@ -42,7 +43,7 @@ include ('system/classes/class.absencemanager.php')
         <?php
         $res = system\classes\absencemanager::allActiveAbsences();
         foreach ($res as $row){
-        echo "<tr><td>" . $row['Username'] ."</td><td>" . $row['From'] . "</td><td>" . $row['To'] . "</td></tr>\n";
+        echo "<tr><td>" . $row['username'] ."</td><td>" . $row['from'] . "</td><td>" . $row['to'] . "</td></tr>\n";
         }
         ?>
       </tbody>

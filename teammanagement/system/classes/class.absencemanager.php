@@ -25,7 +25,7 @@ class absencemanager
 
         $uuid = playermanager::getUUID($username);
         $dgbh = globaldb();
-        $stmt = $dgbh->prepare("INSERT INTO Absence_Dates (`UUID`, `From`, `To`) VALUES (:UUID, :From, :To)");
+        $stmt = $dgbh->prepare("INSERT INTO absence_dates (`uuid`, `from`, `to`) VALUES (:UUID, :From, :To)");
         $stmt->bindParam(":UUID", $uuid);
         $stmt->bindParam(":From", $from);
         $stmt->bindParam(":To", $to);
@@ -48,7 +48,7 @@ class absencemanager
 
     public static function allActiveAbsences(){
         $dgbh = globaldb();
-        $stmt = $dgbh->prepare("SELECT User.Username, Absence_Dates.From, Absence_Dates.To FROM Absence_Dates, User WHERE Absence_Dates.UUID = User.UUID AND Absence_Dates.To >= CURRENT_DATE Order By User.Username");
+        $stmt = $dgbh->prepare("SELECT user.username, absence_dates.from, absence_dates.to FROM absence_dates, user WHERE absence_dates.uuid = user.uuid AND absence_dates.to >= CURRENT_DATE Order By user.username");
         $stmt->execute();
 
         return $stmt->fetchAll();

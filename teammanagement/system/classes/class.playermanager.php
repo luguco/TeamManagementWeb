@@ -16,7 +16,7 @@ class playermanager
     public static function getUUID($username)
     {
         $dgbh = globaldb();
-        $stmt = $dgbh->prepare("SELECT UUID FROM User WHERE Username = :Username");
+        $stmt = $dgbh->prepare("SELECT uuid FROM user WHERE username = :Username");
         $stmt->bindParam(":Username", $username);
         $stmt->execute();
         $row = $stmt->fetch();

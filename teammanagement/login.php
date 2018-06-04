@@ -16,16 +16,18 @@ error_reporting(E_ALL) ;
     <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
 </div>
 
-<?php 
+<?php
   include ('backend_handler/notice.php');
 ?>
 
 <?php
 session_start();
-$err = $_SESSION['error'];
-if (!is_null($err)) {
-    echo '<label id="errmsg"><br>' . $err . '</label>';
-    $_SESSION['error'] = null;
+if(isset($_SESSION['error'])) {
+    $err = $_SESSION['error'];
+    if (!is_null($err)) {
+        echo '<label id="errmsg"><br>' . $err . '</label>';
+        $_SESSION['error'] = null;
+    }
 }
 ?>
 

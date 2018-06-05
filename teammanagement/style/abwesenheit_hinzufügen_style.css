@@ -41,6 +41,7 @@ body {
 #button_blue:hover {
   border-color: deepskyblue;
   transition: 500ms;
+  cursor: pointer;
 }
 
 #button_red {

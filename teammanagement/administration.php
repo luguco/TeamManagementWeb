@@ -29,7 +29,15 @@ include('system/loginsession_tester.php');
     </div>
     
     <div class="settingdiv1">
-      ded  <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded
+      <h1 id="title1">Meldung:</h1>
+      <form method="post" action="backend_handler/absence_manager.php">
+          <input type="text" id="input_alert_text" placeholder="Meldung" required="required" maxlength="100">
+          <br>
+          <input type="checkbox" id="ckb_enable_alert" checked>
+          <label style="color: white;" for="ckb_enable_alert">Meldung anzeigen?</label>
+          
+          <input id="button_orange" type="submit" value="speichern">
+      </form>      
     </div>
     
     <div class="settingdiv2">

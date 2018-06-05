@@ -30,19 +30,19 @@ include('system/loginsession_tester.php');
 </div>
 
 <div class="maindiv">
-    <h1 id="ueberinfo1">Abwesenheit hinzufügen:</h1>
+  <h1 id="ueberinfo1">Abwesenheit hinzufügen:</h1>
     
-    <form method="post" action="backend_handler/absence_manager.php">
+  <form method="post" action="backend_handler/absence_manager.php">
        
-        <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required">
+      <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required">
         
-        <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required">
+      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required">
+      
+      <br><input id="button_blue" style="margin: 10px 0px 0px 40px;" type="submit" value="Hinzufügen">
         
-        <br><input id="button_blue" style="margin: 10px 0px 0px 40px;" type="submit" value="Hinzufügen">
-        
-        <a id="button_red" style="margin: 10px 0px 0px 10px; text-decoration: none;" href="alle_abwesenheiten.php">zurück</a>
-    </form>
-    <p style="color: white; margin: 38px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | c2018</p>
+      <a id="button_red" style="margin: 10px 0px 0px 10px; text-decoration: none;" href="alle_abwesenheiten.php">zurück</a>
+  </form>
+  <p style="color: white; margin: 38px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | c2018</p>
 </div>
 </body>
 </html>

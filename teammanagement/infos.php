@@ -30,7 +30,7 @@ include('backend_handler/header.php');
 
     $res = system\classes\system_connector::getInfos();
     foreach ($res as $rs){
-        echo "<p id='" . $rs['colorname'] . "'>" . $rs['info_text'] . "</p>\n";
+        echo "<p id='p_" . $rs['colorname'] . "'>" . $rs['info_text'] . "</p>\n";
     }
     ?>
 

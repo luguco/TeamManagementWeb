@@ -26,9 +26,9 @@ class absencemanager
         $uuid = playermanager::getUUID($username);
         $dgbh = globaldb();
         $stmt = $dgbh->prepare("INSERT INTO absence_dates (`uuid`, `from`, `to`) VALUES (:UUID, :From, :To)");
-        $stmt->bindParam(":uuid", $uuid);
-        $stmt->bindParam(":from", $from);
-        $stmt->bindParam(":to", $to);
+        $stmt->bindParam(":UUID", $uuid);
+        $stmt->bindParam(":From", $from);
+        $stmt->bindParam(":To", $to);
         $stmt->execute();
 
         return "SUCC";

@@ -25,11 +25,14 @@ include('backend_handler/header.php');
 <div class="maindiv">
     <h1 id="ueberinfo1">Aktuelle Informationen</h1>
 
+    <?php
+    include_once "system/classes/class.system_connector.php";
 
-    <p id="p_blue">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
-    <p id="p_orange">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
-    <p id="p_green">Hier werden Informationen aus der Datenbank eingelesen. Diese können in drei verschiedenen Farben angezeigt werden. (blau, orange und grün).</p>
-
+    $res = system\classes\system_connector::getInfos();
+    foreach ($res as $rs){
+        echo "<p id='" . $rs['colorname'] . "'>" . $rs['info_text'] . "</p>\n";
+    }
+    ?>
 
 </div>
 </body>

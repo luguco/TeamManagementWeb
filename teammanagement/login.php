@@ -18,9 +18,6 @@ error_reporting(E_ALL) ;
   </div>
 </div>
 
-<?php 
-  include ('backend_handler/notice.php');
-?>
 
 <div class="maindiv">
   <?php

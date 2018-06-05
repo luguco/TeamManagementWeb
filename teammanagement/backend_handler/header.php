@@ -5,7 +5,7 @@
 </div>  
 
 <?php 
-    include ('backend_handler/notice.php');
+    include ('backend_handler/alert.php');
 ?>
 
 <style>

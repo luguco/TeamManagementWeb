@@ -34,6 +34,18 @@ class absencemanager
         return "SUCC";
     }
 
+    public static function deleteAbsence($username, $from, $to){
+        $gdbh = globaldb();
+
+        $stmt = $gdbh->prepare("DELETE FROM `absence_dates` WHERE `uuid` = :UUID AND `from` = :From AND `to` = :To");
+        $stmt->bindParam(":UUID", playermanager::getUUID($username));
+        $stmt->bindParam(":From", $from);
+        $stmt->bindParam(":To", $to);
+        $stmt->execute();
+
+
+    }
+
     public static function checkInput($username, $from, $to)
     {
         if (!isset($username)) return "Kein Benutzername angegeben";

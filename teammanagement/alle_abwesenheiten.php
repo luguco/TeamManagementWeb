@@ -11,7 +11,13 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 include('system/loginsession_tester.php');
-include ('system/classes/class.absencemanager.php')
+include ('system/classes/class.absencemanager.php');
+
+if(isset($_GET['delete'])){
+
+    system\classes\absencemanager::deleteAbsence($_GET['delete'], $_GET['from'], $_GET['to']);
+    header("Location: /teammanagement/alle_abwesenheiten.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -43,7 +49,7 @@ include ('system/classes/class.absencemanager.php')
         <?php
         $res = system\classes\absencemanager::allActiveAbsences();
         foreach ($res as $row){
-        echo "<tr><td>" . $row['username'] ."</td><td>" . $row['from'] . "</td><td>" . $row['to'] . "</td></tr>\n";
+        echo "<tr><td>" . $row['username'] ."</td><td>" . $row['from'] . "</td><td>" . $row['to'] . "</td><td><button type='button' onclick=\"window.location.href='alle_abwesenheiten.php?delete=" . $row['username'] . "&from=" . $row['from'] . "&to=" . $row['to'] . "'\" >Löschen</button></td></tr>\n";
         }
         ?>
       </tbody>

@@ -26,6 +26,32 @@ class system_connector
         return "xXNot-FoundXx";
     }
 
+    public static function getHeaderAlertText(){
+        $gdbh = globaldb();
+        $stmt = $gdbh->prepare("SELECT value FROM system_settings WHERE `key` = 'alert_text' ");
+        $stmt->execute();
+        return $stmt->fetch()['value'];
+    }
+
+    public static function getHeaderAlertStatus(){
+        $gdbh = globaldb();
+        $stmt = $gdbh->prepare("SELECT value FROM system_settings WHERE `key` = 'alert'");
+        $stmt->execute();
+        return $stmt->fetch()['value'];
+    }
+
+    public static function setHeaderAlert($text, $visible){
+
+        $gdbh = globaldb();
+        $stmt = $gdbh->prepare("UPDATE system_settings SET value = :Text WHERE `key` = 'alert_text'");
+        $stmt->bindParam(":Text", $text);
+        $stmt->execute();
+
+        $stmt = $gdbh->prepare("UPDATE system_settings SET value = :Visible WHERE `key` = 'alert'");
+        $stmt->bindParam(":Visible", $visible);
+        $stmt->execute();
+    }
+
     public static function getInfos(){
         $gdbh = globaldb();
         $stmt = $gdbh->prepare("SELECT * FROM `notices` ORDER BY `index` ");

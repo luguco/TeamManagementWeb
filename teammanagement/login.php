@@ -12,8 +12,10 @@ error_reporting(E_ALL) ;
     <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 </head>
 <body>
-<div class="logodiv">
-    <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+<div class="logo_container">
+  <div class="logodiv">
+      <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+  </div>
 </div>
 
 <?php 
@@ -30,7 +32,7 @@ error_reporting(E_ALL) ;
             $_SESSION['error'] = null;
         }
     }
-  ?> 
+  ?>
   <h1 id="title">Pixl-Gaming</h1>
   <h2 id="titleinfo">Management</h2>
   <form method="post" action="backend_handler/login.php">

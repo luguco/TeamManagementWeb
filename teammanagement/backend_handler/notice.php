@@ -10,7 +10,8 @@
     background-color: red;
     border-color: red;
     border-left-color: #BD1818;  
-    width: 35%;
+    width: 30%;
+    min-width: 450px;
     margin: 25px auto 0px auto;
     padding: 10px;
   }

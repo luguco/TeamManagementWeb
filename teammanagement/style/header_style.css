@@ -3,6 +3,12 @@ body {
   background-size: 3000px 1500px;
 }
 
+.logo_container {
+  width: 80%;
+  min-width: 800px;
+  margin: 0px auto 0px auto;
+}
+
 .logodiv {
   margin: 25px auto 0px auto;
   width: 64px;

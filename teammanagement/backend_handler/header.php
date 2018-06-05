@@ -1,9 +1,11 @@
-<div class="logodiv">
-    <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
-</div>
+<div class="logo_container">
+  <div class="logodiv">
+      <img src="grafiken/logo.png" alt="Logo von Pixl-Gaming" id="logo">
+  </div>
+</div>  
 
 <?php 
-  include ('backend_handler/notice.php');
+    include ('backend_handler/notice.php');
 ?>
 
 <style>
@@ -17,7 +19,8 @@
     background-color: red;
     border-color: red;
     border-left-color: #BD1818;  
-    width: 75%;
+    width: 77%;
+    min-width: 800px;
     margin: 25px auto 0px auto;
     padding: 10px;
   }

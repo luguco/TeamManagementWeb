@@ -9,6 +9,40 @@
   border-radius: 0px 0px 20px 20px;
 }
 
+.head_container {
+  display: flex;
+  height: 60px;
+  margin: 0px 0px 25px 0px;
+}
+
+#title_flex1 {
+  flex: 7;
+}
+
+#title_flex2 {
+  flex: 4;
+}
+
+#title1 {
+  color: white;
+  margin: 20px auto 0px auto;
+  float: right;
+}
+
+#edit_icon {
+  color: white;
+  font-size: 45px;
+  float: right;
+  margin: 15px 15px 0px 0px;
+  transition: 350ms;
+}
+
+#edit_icon:hover {
+  transform: rotate(10deg);
+  transition: 350ms;
+  cursor: pointer;
+}
+
 #p_blue {
   color: white;
   fonz-size: 24px;
@@ -55,9 +89,7 @@
   padding: 10px;
 }
 
-
-#ueberinfo1 {
+#btn_del_info {
   color: white;
-  margin: 25px auto 25px auto;
-  width: 330px;
+  float: left;
 }

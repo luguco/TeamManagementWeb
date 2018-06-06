@@ -25,8 +25,10 @@ include ('system/loginsession_tester.php');
 
 <div class="maindiv">
     <div class="titlediv">
-        <h1 id="ueberinfo1"><?php echo $_SESSION['username']?> in der Administration</h1>
-<!--        <img src="grafiken/facepalm.png" alt="Facepalm emoji" id="facepalm">	-->
+      <div id="title_indiv_title"><h1 id="ueberinfo1"><?php echo $_SESSION['username']?> in der Administration</h1></div>
+    <div id="title_indiv_facepalm">
+      <img src="grafiken/facepalm.png" alt="Facepalm emoji" id="facepalm">
+    </div>
     </div>
     
     <div class="settings_container">

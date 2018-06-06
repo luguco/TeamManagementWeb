@@ -43,13 +43,15 @@
 }
 
 #btn_del_absence {
-  border-color: red;
-  color: red;
+  border-color: white;
+  color: white;
   background-color: #302F2F;
   border-radius: 15px;
   border-style: solid;
   border-width: 2px;
   padding: 2px 5px;
+  float: right;
+  margin-right: 4px;
 }
 
 #btn_del_absence:hover {

@@ -6,18 +6,17 @@
  * Time: 19:03
  */
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  ini_set('display_startup_errors', 1);
+  error_reporting(E_ALL);
 
-include('system/loginsession_tester.php');
-include ('system/classes/class.absencemanager.php');
+  include('system/loginsession_tester.php');
+  include ('system/classes/class.absencemanager.php');
 
-if(isset($_GET['delete'])){
-
+  if(isset($_GET['delete'])){
     system\classes\absencemanager::deleteAbsence($_GET['delete'], $_GET['from'], $_GET['to']);
     header("Location: /teammanagement/alle_abwesenheiten.php");
-}
+  }
 ?>
 <!DOCTYPE html>
 <html lang="de">

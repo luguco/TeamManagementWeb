@@ -25,10 +25,6 @@ include('system/loginsession_tester.php');
 </head>
 <body>
 
-  <?php
-    include ('backend_handler/header.php');
-  ?>
-
 <div class="maindiv">
 <form method="post" action="backend_handler/new_alert.php">
     <input type="text" id="info" name="info" required placeholder="Neue Info">

@@ -38,13 +38,15 @@ include('backend_handler/header.php');
     include_once "system/classes/class.system_connector.php";
 
     $res = system\classes\system_connector::getInfos();
-    echo "<div id='infos'>\n";
+
     foreach ($res as $rs) {
+        echo "<div id='infos'>\n";
         echo"       <p id='label_title_info'>" . $rs['info_title'] . "</p>\n" .
             "       <p id='p_" . $rs['colorname'] . "'>" . $rs['info_text'] . "</p>\n" .
             "       <button title='Eintrag löschen' id='btn_del_info' type='button'>X</button>\n";
+
+        echo "    </div>\n";
     }
-    echo "    </div>\n";
     ?>
 </div>
 </body>

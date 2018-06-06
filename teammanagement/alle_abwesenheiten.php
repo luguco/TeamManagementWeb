@@ -47,10 +47,10 @@ if(isset($_GET['delete'])){
       </thead>
       <tbody>
         <?php
-        $res = system\classes\absencemanager::allActiveAbsences();
-        foreach ($res as $row){
-        echo "<tr><td>" . $row['username'] ."</td><td>" . $row['from'] . "</td><td>" . $row['to'] . "</td><td><button type='button' onclick=\"window.location.href='alle_abwesenheiten.php?delete=" . $row['username'] . "&from=" . $row['from'] . "&to=" . $row['to'] . "'\" >Löschen</button></td></tr>\n";
-        }
+          $res = system\classes\absencemanager::allActiveAbsences();
+          foreach ($res as $row){
+          echo "<tr><td>" . $row['username'] ."</td><td>" . $row['from'] . "</td><td>" . $row['to'] . "</td><td><button title='Eintrag löschen' id='btn_del_absence' type='button' onclick=\"window.location.href='alle_abwesenheiten.php?delete=" . $row['username'] . "&from=" . $row['from'] . "&to=" . $row['to'] . "'\" >X</button></td></tr>\n";
+          }
         ?>
       </tbody>
   </table>

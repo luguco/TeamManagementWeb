@@ -19,31 +19,33 @@ include ('system/loginsession_tester.php');
 <body>
 
 <?php
-include('backend_handler/header.php');
-include_once ('system/classes/class.system_connector.php');
+	include('backend_handler/header.php');
+	include_once ('system/classes/class.system_connector.php');
 ?>
 
 <div class="maindiv">
     <div class="titlediv">
-        <h1 id="ueberinfo1"><?php echo $_SESSION['username'] ?> in der Administration</h1>
-        <img src="grafiken/facepalm.png" alt="Facepalm emoji" id="facepalm">
+        <h1 id="ueberinfo1"><?php echo $_SESSION['username']?> in der Administration</h1>
+<!--        <img src="grafiken/facepalm.png" alt="Facepalm emoji" id="facepalm">	-->
     </div>
+    
+    <div class="settings_container">
+		<div class="settingdiv1">
+		  <h1 id="title1">Meldung:</h1>
+		  <form method="post" action="backend_handler/edit_header_alert.php">
+			  <input type="text" name="labelinput" id="input_alert_text" placeholder="Meldung" required="required" maxlength="100" value="<?php echo (system\classes\system_connector::getHeaderAlertText());?>">
+			  <br>
+			  <input type="checkbox" name="checkbox" id="ckb_enable_alert"<?php  if(system\classes\system_connector::getHeaderAlertStatus() == 1) echo "checked";?>>
+			  <label id="enable_alert_label" for="ckb_enable_alert">Meldung anzeigen?</label>
 
-    <div class="settingdiv1">
-        <h1 id="title1">Meldung:</h1>
-        <form method="post" action="backend_handler/edit_header_alert.php">
-            <input type="text" name="labelinput" id="input_alert_text" placeholder="Meldung" required="required" maxlength="100" value="<?php echo (system\classes\system_connector::getHeaderAlertText());?>">
-            <br>
-            <input type="checkbox" name="checkbox" id="ckb_enable_alert" <?php  if(system\classes\system_connector::getHeaderAlertStatus() == 1) echo "checked";?>>
-            <label style="color: white;" for="ckb_enable_alert">Meldung anzeigen?</label>
+			  <input id="button_orange" type="submit" value="speichern">
+		  </form>
+		</div>
 
-            <input id="button_orange" type="submit" value="speichern">
-        </form>
-    </div>
-
-    <div class="settingdiv2">
-        ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded
-    </div>
+		<div class="settingdiv2">
+			ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded
+		</div>
+    </div>    
 </div>
 </body>
 </html>

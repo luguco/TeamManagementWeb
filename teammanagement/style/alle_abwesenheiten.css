@@ -27,15 +27,11 @@
 }
 
 #customers td:hover {
-  color: black;
-}
-
-#customers tr:nth-child(even){
-  background-color: #f2f2f2;
+  color: deepskyblue;
 }
 
 #customers tr:hover {
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 #customers th {
@@ -44,4 +40,18 @@
   text-align: left;
   background-color: DeepSkyBlue;
   color: white;
+}
+
+#btn_del_absence {
+  border-color: red;
+  color: red;
+  background-color: #302F2F;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 2px 5px;
+}
+
+#btn_del_absence:hover {
+  cursor: pointer;
 }

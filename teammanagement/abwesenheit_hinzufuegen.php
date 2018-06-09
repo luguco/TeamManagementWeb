@@ -33,6 +33,7 @@ include('system/loginsession_tester.php');
   <h1 id="ueberinfo1">Abwesenheit hinzufügen:</h1>
     
   <form method="post" action="backend_handler/absence_manager.php">
+      <input type="text", name="reason" id="reason" required="required" placeholder="Grund">
        
       <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required">
         

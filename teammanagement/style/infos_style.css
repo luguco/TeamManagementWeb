@@ -30,20 +30,38 @@
 }
 
 #edit_icon {
+  border-color: white;
   color: white;
-  font-size: 45px;
+  background-color: #302F2F;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 5px 8px;
+  font-size: 35px;
   float: right;
   margin: 15px 15px 0px 0px;
-  transition: 350ms;
+  transition: 600ms;
 }
 
 #edit_icon:hover {
-  transform: rotate(10deg);
-  transition: 350ms;
+  box-shadow: 0px 0px 12px 0px rgba(255, 255, 255, 1);
+  transition: 200ms;
   cursor: pointer;
 }
 
-#p_blue {
+#label_p_text {
+  color: white;
+  margin: 5px 0px 0px 0px;
+}
+
+#label_title_info {
+  color: white;
+  text-decoration: underline;
+  font-size: 18px;
+  margin: 5px 0px 0px 0px;
+}
+
+.d_blue {
   color: white;
   fonz-size: 24px;
   border-style: solid;
@@ -58,7 +76,7 @@
   padding: 10px;
 }
 
-#p_orange {
+.d_orange {
   color: white;
   fonz-size: 24px;
   border-style: solid;
@@ -74,7 +92,7 @@
   padding: 10px;
 }
 
-#p_green {
+.d_green {
   color: white;
   fonz-size: 24px;
   border-style: solid;
@@ -90,6 +108,16 @@
 }
 
 #btn_del_info {
+  border-color: white;
   color: white;
-  float: left;
+  background-color: #302F2F;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 2px 5px;
+  float: right;
+}
+
+#btn_del_info {
+  cursor: pointer;
 }

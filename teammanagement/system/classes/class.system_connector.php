@@ -66,6 +66,11 @@ class system_connector
 
     public static function addInfo($text, $title, $color, $positon){
 
+        /*TODO: Nochmal überarbeiten:
+
+        bei nach xxx index(xxx)+1 überprüfen, ob frei, wenn nicht index > index(xxx) index++; dann an index(xxx)++ einfügen
+
+        */
         $gdbh = globaldb();
         if($positon == "als Erstes"){
             $stmt = $gdbh->prepare("UPDATE `notices` SET `index` = `index` + 1000000");
@@ -106,5 +111,13 @@ class system_connector
             $stmt->bindParam(":Index", $index);
             $stmt->execute();
         }
+    }
+
+    public static function deleteInfo($title){
+
+        $dgbh = globaldb();
+        $stmt = $dgbh->prepare("DELETE FROM `notices` WHERE `info_title` = :Title");
+        $stmt->bindParam(":Title", $title);
+        $stmt->execute();
     }
 }

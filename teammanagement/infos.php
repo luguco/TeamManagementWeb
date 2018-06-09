@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 
 include('system/loginsession_tester.php');
 
+
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -34,9 +35,14 @@ include('system/loginsession_tester.php');
     </div>
 
     <?php
-      include_once "system/classes/class.system_connector.php";
+    include_once "system/classes/class.system_connector.php";
+    if (isset($_GET['delete'])) {
 
-      $res = system\classes\system_connector::getInfos();
+        system\classes\system_connector::deleteInfo($_GET['delete']);
+        header("Location: /teammanagement/infos.php");
+        die();
+    }
+    $res = system\classes\system_connector::getInfos();
 
       foreach ($res as $rs) {
         echo "<div class='d_" . $rs['colorname'] . "'>";

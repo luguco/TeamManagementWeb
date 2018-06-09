@@ -21,7 +21,7 @@ $stmt = $gdbh->prepare("SELECT name FROM groups");
 $stmt->execute();
 $erg = $stmt->fetchAll();
 
-
+echo "          <dt id='all_users'><a id='group_txt' href='team.php?group=all'>Alle Teammitglieder</a></dt>\n";
 foreach ($erg as $row) {
 
     $stmt = $gdbh->prepare("SELECT colors.colorhash FROM colors, groups WHERE colors.colorname = groups.rankcolor AND groups.name = :Group");

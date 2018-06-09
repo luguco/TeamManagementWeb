@@ -9,7 +9,7 @@ include('system/loginsession_tester.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pixl-Planning | Abwesenheit</title>
     <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
-    
+
     <link rel="stylesheet" href="style/main_style.css">
     <link rel="stylesheet" href="style/abwesenheit_hinzufügen_style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

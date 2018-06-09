@@ -27,7 +27,7 @@ class absencemanager
         $dgbh = globaldb();
         $stmt = $dgbh->prepare("INSERT INTO absence_dates (`uuid`, `reason`, `from`, `to`) VALUES (:UUID, :Reason, :From, :To)");
         $stmt->bindParam(":UUID", $uuid);
-        $stmt->bindParam(":Reasom", $reason);
+        $stmt->bindParam(":Reason", $reason);
         $stmt->bindParam(":From", $from);
         $stmt->bindParam(":To", $to);
         $stmt->execute();
@@ -62,7 +62,7 @@ class absencemanager
 
     public static function allActiveAbsences(){
         $dgbh = globaldb();
-        $stmt = $dgbh->prepare("SELECT user.username, reason absence_dates.from, absence_dates.to FROM absence_dates, user WHERE absence_dates.uuid = user.uuid AND absence_dates.to >= CURRENT_DATE Order By user.username");
+        $stmt = $dgbh->prepare("SELECT user.username, absence_dates.reason, absence_dates.from, absence_dates.to FROM absence_dates, user WHERE absence_dates.uuid = user.uuid AND absence_dates.to >= CURRENT_DATE Order By user.username");
         $stmt->execute();
 
         return $stmt->fetchAll();

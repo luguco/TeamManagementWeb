@@ -1,0 +1,98 @@
+body {
+  background-image: url('../grafiken/colored_bg.png') ;
+  background-size: 3000px 1500px;
+}
+
+.logodiv {
+  margin: 25px auto 0px auto;
+  width: 64px;
+  height: 65px;
+  background-color: #302F2F;
+  border-color: #302F2F;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+.maindiv {
+  background-color: #302F2F;
+  border-color: #302F2F;
+  height: 340px;
+  width: 30%;
+  min-width: 500px;
+  max-width: 500px;
+  margin: 45px auto 0px auto;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+#info_title {
+  float: left;
+}
+
+#info {
+  float: left;
+}
+
+select {
+  float: left;
+  border-stlye: solid;
+  border-color: deepskyblue;
+  background-color: deepskyblue;
+  color: white;
+  border-radius: 5px;
+  margin: 25px 0px 0px 40px;
+  padding: 10px 10px;
+  width: 180px;
+}
+
+#btn_safe {
+  float: left;
+  margin: 25px 0px 0px 40px;
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-color: #0093D3;
+  border-radius: 5px;
+  padding: 3px 20px 3px 20px;
+  transition: 500ms;  
+}
+
+#btn_safe:hover {
+  border-color: deepskyblue;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#btn_back {
+  background-color: orange;
+  font-size: 20px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-color: #DE8400;
+  border-radius: 5px;
+  padding: 3px 35px 3px 35px;
+  transition: 500ms;
+  margin: 25px 0px 0px 20px;
+  float: left;
+  text-decoration: none;
+}
+
+#btn_back:hover {
+  border-color: orange;
+  transition: 500ms;
+  cursor: pointer;  
+}
+
+#ueberinfo1 {
+  color: white;
+  font-size: 24px;
+  margin: 25px 0px 0px 40px;
+}

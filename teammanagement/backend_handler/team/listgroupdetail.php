@@ -25,7 +25,14 @@ if($_GET['group'] == "all"){
     $eg = $stmt->fetchAll();
 
     foreach ($eg as $rw){
-        echo "<dd ><a id='users_txt' href='team.php?user=" . $rw['username'] . "'>" . $rw['username'] . "</a></dd>\n";
+
+        $stmt = $gdbh->prepare("SELECT colors.colorhash FROM colors, groups, groupplayer, user WHERE colors.colorname = groups.usercolor AND groups.g_id = groupplayer.g_id AND groupplayer.p_id = user.uuid AND username = :User ORDER BY groups.priority");
+        $stmt->bindParam(":User", $rw['username']);
+        $stmt->execute();
+
+        $res = $stmt->fetch();
+
+        echo "<dd style='background-color: " . $res['colorhash'] . "'><a id='users_txt' href='team.php?user=" . $rw['username'] . "'>" . $rw['username'] . "</a></dd>\n";
     }
 
 } else {

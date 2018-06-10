@@ -62,7 +62,7 @@ class absencemanager
 
     public static function allActiveAbsences(){
         $dgbh = globaldb();
-        $stmt = $dgbh->prepare("SELECT user.username, absence_dates.reason, absence_dates.from, absence_dates.to FROM absence_dates, user WHERE absence_dates.uuid = user.uuid AND absence_dates.to >= CURRENT_DATE Order By user.username");
+        $stmt = $dgbh->prepare("SELECT user.username, absence_dates.reason, absence_dates.from, absence_dates.to FROM absence_dates, user WHERE absence_dates.uuid = user.uuid AND absence_dates.to >= CURRENT_DATE Order By absence_dates.from");
         $stmt->execute();
 
         return $stmt->fetchAll();

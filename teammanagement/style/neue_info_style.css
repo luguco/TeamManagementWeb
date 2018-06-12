@@ -28,6 +28,7 @@ body {
 
 #info_title {
   float: left;
+  text-decoration: underline;
 }
 
 #info {
@@ -38,10 +39,11 @@ select {
   float: left;
   border-stlye: solid;
   border-color: deepskyblue;
-  background-color: deepskyblue;
-  color: white;
+  background-color: white;
+  color: deepskyblue;
   border-radius: 5px;
-  margin: 25px 0px 0px 40px;
+  border-width: 2px;
+  margin: 25px 2px 0px 40px;
   padding: 10px 10px;
   width: 180px;
 }

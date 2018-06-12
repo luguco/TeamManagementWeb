@@ -13,7 +13,7 @@
   border-right-width: 20px;
   border-style: solid;
   border-radius: 0px 0px 20px 20px;
-  margin: 0px 0px 0px 0px;
+  width: 220px;
 }
 
 #users {
@@ -21,10 +21,11 @@
   background-color: #302F2F;
   border-color: #302F2F;
   border-width: 1px;
+  border-bottom-width: 8px;
   border-right-width: 20px;
   border-style: solid;
   border-radius: 0px 0px 20px 20px;
-  width: 65%;
+  width: calc(100% - 300px);
 }
 
 dt {
@@ -37,7 +38,7 @@ dt {
 }
 
 dd {
-  width: 200px;
+  width: 195px;
   height: 25px;
   margin: 0px 0px 10px 20px;
   text-align: center;
@@ -45,6 +46,10 @@ dd {
   float: left;
   border-style; solid;
   border-radius: 5px;
+}
+
+dd:hover, dt:hover {
+  box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
 }
 
 #users_txt {
@@ -55,4 +60,16 @@ dd {
 #group_txt {
   color: white;
   text-decoration: none;
+}
+
+#allgroup_txt {
+  color: white;
+  text-decoration: underline;
+}
+
+#all_users {
+  background-color: deepskyblue;
+  border-radius: 0px;
+  width: 240px;
+  margin: 0px 0px 20px 0px;
 }

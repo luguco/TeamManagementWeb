@@ -12,6 +12,7 @@ include('system/loginsession_tester.php');
 
     <link rel="stylesheet" href="style/main_style.css">
     <link rel="stylesheet" href="style/abwesenheit_hinzufügen_style.css">
+    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
@@ -35,9 +36,9 @@ include('system/loginsession_tester.php');
   <form method="post" action="backend_handler/absence_manager.php">
       <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="reason" id="reason" required="required" placeholder="Grund">
        
-      <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required">
+      <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required" autocomplete="off">
         
-      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required">
+      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required" autocomplete="off">
       
       <br><input id="button_blue" style="margin: 10px 0px 0px 40px;" type="submit" value="Hinzufügen">
         

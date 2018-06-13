@@ -52,3 +52,6 @@ if($_GET['group'] == "all"){
 }
 echo "        </dl>\n";
 echo "    </div>\n";
+
+include('include/navbar.php');
+

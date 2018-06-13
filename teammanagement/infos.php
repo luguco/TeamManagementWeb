@@ -46,7 +46,7 @@ include('system/loginsession_tester.php');
 
       foreach ($res as $rs) {
         echo "<div class='d_" . $rs['colorname'] . "'>";
-        echo "<button title='Eintrag löschen' id='btn_del_info' type='button'>X</button>\n" .
+        echo "<button title='Eintrag löschen' id='btn_del_info' type='button' onclick=\"window.location.href = 'infos.php?delete=" . $rs['info_title'] . "'\">X</button>\n" .
              "<p id='label_title_info'>" . $rs['info_title'] . "</p>\n" .
              "<p id='label_p_text'>" . $rs['info_text'] . "</p>";
         echo "</div>\n";

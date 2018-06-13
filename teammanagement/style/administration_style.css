@@ -14,31 +14,11 @@
   margin: 0px auto 0px auto;
   height: 65px;
   text-align: center;
-  display: flex;
+  line-height: 65px;
 }
 
-#title_indiv_title {
+#title1 {
   color: white;
-  font-size: 24px;
-  flex: 7;
-}
-
-#title_indiv_facepalm {
-  flex: 4;
-}
-
-#ueberinfo1 {
-  color: white;
-  font-size: 24px;
-  float: right;
-  margin: 30px 0px 0px 0px;
-}
-
-#facepalm {
-  width: 45px;
-  height: 45px;
-  float: left;
-  margin: 20px 0px 0px 10px;
 }
 
 .settings_container {

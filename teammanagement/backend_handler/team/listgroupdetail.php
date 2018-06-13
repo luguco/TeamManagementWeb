@@ -14,7 +14,7 @@ include_once('system/classes/database_connector.php');
 
 
 echo "<div id='users'>\n";
-echo "        <dl>\n";
+echo "<dl>\n";
 
 $gdbh = globaldb();
 
@@ -50,8 +50,8 @@ if($_GET['group'] == "all"){
         echo "<dd style='background-color: " . $res['colorhash'] . "'><a id='users_txt' href='team.php?user=" . $rw['username'] . "'>" . $rw['username'] . "</a></dd>\n";
     }
 }
-echo "        </dl>\n";
-echo "    </div>\n";
+echo "</dl>\n";
+echo "</div>\n";
 
 include('include/navbar.php');
 

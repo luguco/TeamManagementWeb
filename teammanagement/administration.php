@@ -25,15 +25,12 @@ include ('system/loginsession_tester.php');
 
 <div class="maindiv">
     <div class="titlediv">
-      <div id="title_indiv_title"><h1 id="ueberinfo1"><?php echo $_SESSION['username']?> in der Administration</h1></div>
-    <div id="title_indiv_facepalm">
-      <img src="grafiken/facepalm.png" alt="Facepalm emoji" id="facepalm">
-    </div>
+      <h1 id="title1">Systemeinstellungen</h1>
     </div>
     
     <div class="settings_container">
 		<div class="settingdiv1">
-		  <h1 id="title1">Meldung:</h1>
+		  <h2 id="title1">Meldung:</h2>
 		  <form method="post" action="backend_handler/edit_header_alert.php">
 			  <input type="text" name="labelinput" id="input_alert_text" placeholder="Meldung" required="required" maxlength="100" value="<?php echo (system\classes\system_connector::getHeaderAlertText());?>">
 			  <br>
@@ -45,7 +42,7 @@ include ('system/loginsession_tester.php');
 		</div>
 
 		<div class="settingdiv2">
-			ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded <br> ded
+			
 		</div>
     </div>    
 </div>

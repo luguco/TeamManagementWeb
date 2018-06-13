@@ -27,12 +27,12 @@ include('system/loginsession_tester.php');
   <div class="head_container">
     <div id="title_flex1">
       <h1 id="title1">Aktuelle Anliegen</h1>
-        </div>
-        <div id="title_flex2">
-          <!--      Dieses <i> nur, wenn Recht dafür vorhanden (Div muss aber bleiben)-->
-          <button class="fa fa-edit" id="edit_icon" onclick="window.location.href='neue_info.php'"></button>
-      </div>
     </div>
+    <div id="title_flex2">
+      <!--      Diesen button nur, wenn Recht dafür vorhanden (Div muss aber bleiben)-->
+      <button class="fa fa-edit" id="edit_icon" onclick="window.location.href='neue_info.php'"></button>
+    </div>
+  </div>
 
     <?php
     include_once "system/classes/class.system_connector.php";

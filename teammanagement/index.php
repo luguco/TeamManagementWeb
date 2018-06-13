@@ -27,7 +27,7 @@ include('system/loginsession_tester.php');
     <p id="p_blue">Das Pixl Team- und Projektmanagement System erlaubt es dir, wie der Name schon sagt, logisch und einfach dein Team und dessen Projekte zu verwalten.</p>
     
     <p id="p_orange">Funktionen, wie immer über die aktuellsten Abwesenheiten der Teammitglieder bescheid zu wissen, oder deren aktuellen Aufgaben aktiv zu verfolgen, vereinfachen den Workflow enorm. <br> Geplant sind aktuell viele Funktionen, wie Rangverwaltungen mit Rechtesystem, ein Ticketsystem für die einfache und produktive interne Struktur und weitere nützliche Helfersysteme.</p>
-    <p id="p_green">Pixl-Planning by Luguco and LaetzPlaey | &copy;2018 by Pixl-Gaming | V0.3.5</p>
+    <p id="p_green">Pixl-Planning by Luguco and LaetzPlaey | &copy;2018 by Pixl-Gaming | V0.3.8</p>
   </div>
 </body>
 </html>

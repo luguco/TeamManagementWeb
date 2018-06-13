@@ -34,7 +34,7 @@
         
     <a class="button_nav" style="text-decoration: none; float: right; margin: 10px 20px 0px 0px; background-color: red; border-color: red; border-top-width: 5px; border-top-color: #BD1818;" href="logout.php">Logout</a>
     
-    <a class="button_nav" style="text-decoration: none; float: right; margin: 10px 5px 0px 0px; background-color: red; border-color: red; border-top-width: 5px; border-top-color: #BD1818;" href="administration.php">Admin</a>
+    <a class="button_nav" style="text-decoration: none; float: right; margin: 10px 5px 0px 0px; background-color: red; border-color: red; border-top-width: 5px; border-top-color: #BD1818;" href="administration.php">System</a>
     
     <a class="button_nav" style="text-decoration: none; float: right; margin: 10px 5px 0px 0px; background-color: green; border-color: green; border-top-width: 5px; border-top-color: #005900;" href="http://pixl-gaming.net/">Pixl-Webseite</a>
       

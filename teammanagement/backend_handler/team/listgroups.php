@@ -33,4 +33,5 @@ foreach ($erg as $row) {
 }
 
 echo "</dl>\n";
+echo "<div id='div_new_group'><button id='btn_new_group'>+</button></div>";
 echo "</div>\n";

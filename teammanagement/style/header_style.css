@@ -9,10 +9,15 @@ body {
   margin: 0px auto 0px auto;
 }
 
+#logo {
+  height: 64px;
+  width: 64px;
+}
+
 .logodiv {
   margin: 25px auto 0px auto;
   width: 64px;
-  height: 65px;
+  height: 64px;
   background-color: #302F2F;
   border-color: #302F2F;
   border-width: 1px;

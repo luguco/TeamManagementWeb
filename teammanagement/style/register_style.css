@@ -1,0 +1,114 @@
+body {
+  background-image: url('../grafiken/colored_bg.png') ;
+  background-size: 3000px 1500px;
+}
+
+.logo_container {
+  width: 30%;
+  min-width: 450px;
+  margin: 0px auto 0px auto;
+}
+
+#logo {
+  height: 64px;
+  width: 64px;
+}
+
+.logodiv {
+  margin: 25px auto 0px auto;
+  width: 64px;
+  height: 65px;
+  background-color: #302F2F;
+  border-color: #302F2F;
+  border-width: 1px;
+  border-radius: 6px;
+}
+
+#errmsg {
+  color: white;
+  fonz-size: 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-left-width: 10px;
+  border-radius: 4px;
+  background-color: red;
+  border-color: red;
+  border-left-color: #BD1818;  
+  width: 80%;
+  margin: 25px auto 0px auto;
+  padding: 2px 5px;
+}
+
+.maindiv {
+  background-color: #302F2F;
+  border-color: #302F2F;
+  width: 30%;
+  min-width: 450px;
+  margin: 35px auto 0px auto;
+  border-style: solid;
+  border-width: 2px;
+  border-bottom-width: 20px;
+  border-radius: 20px;
+}
+
+#button_blue {
+  background-color: DeepSkyBlue;
+  font-size: 20px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-color: #0093D3;
+  border-radius: 5px;
+  padding: 3px 45px 3px 45px;
+  transition: 500ms;
+}
+
+#button_blue:hover {
+  border-color: deepskyblue;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+#button_red {
+  background-color: orange;
+  font-size: 20px;
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 5px;
+  border-top-width: 5px;
+  border-color: #DE8400;
+  border-radius: 5px;
+  padding: 3px 35px 3px 35px;
+  transition: 500ms;
+}
+
+#button_red:hover {
+  border-color: orange;
+  transition: 500ms;
+}
+
+#title {
+  color: white;
+  margin: 30px 0px 0px 40px;
+}
+
+#titleinfo {
+  color: white;
+  margin: 5px 0px 0px 40px;
+  font-size: 16px;
+}
+
+#ckb_agb {
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+#ckb_agb_label {
+  color: white;
+  float: left;
+  margin: 6px 0px 0px 4px;
+}

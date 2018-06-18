@@ -11,7 +11,7 @@ include('system/loginsession_tester.php');
     <link rel="icon" type="image/png" href="grafiken/logo.png" sizes="32x32">
 
     <link rel="stylesheet" href="style/main_style.css">
-    <link rel="stylesheet" href="style/abwesenheit_hinzufügen_style.css">
+    <link rel="stylesheet" href="style/abwesenheit_hinzufuegen_style.css">
     
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -19,8 +19,8 @@ include('system/loginsession_tester.php');
         $(function () {
             $("#datepicker_begin").datepicker();
             $("#datepicker_end").datepicker();
-            $("#datepicker_begin").datepicker("option", "dateFormat", 'yy-mm-dd');
-            $("#datepicker_end").datepicker("option", "dateFormat", 'yy-mm-dd');
+            $("#datepicker_begin").datepicker("option", "dateFormat", 'dd.mm.yy');
+            $("#datepicker_end").datepicker("option", "dateFormat", 'dd.mm.yy');
         });
     </script>
 </head>
@@ -34,17 +34,14 @@ include('system/loginsession_tester.php');
   <h1 id="ueberinfo1">Abwesenheit hinzufügen:</h1>
     
   <form method="post" action="backend_handler/absence_manager.php">
-      <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="reason" id="reason" required="required" placeholder="Grund">
-       
-      <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required" autocomplete="off">
-        
-      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required" autocomplete="off">
-      
-      <br><input id="button_blue" style="margin: 10px 0px 0px 40px;" type="submit" value="Hinzufügen">
-        
-      <a id="button_red" style="margin: 10px 0px 0px 10px; text-decoration: none;" href="alle_abwesenheiten.php">zurück</a>
+    <input style="width: 80%; height: 35px; margin: 25px 0px 0px 40px;" type="text" name="reason" id="reason" required="required" placeholder="Grund">
+    <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_begin" id="datepicker_begin" placeholder="Datum von" required="required" autocomplete="off">
+    <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="datepicker_end" id="datepicker_end" placeholder="Datum bis" required="required" autocomplete="off">
+    <br>
+    <input id="button_blue" style="margin: 10px 0px 0px 40px;" type="submit" value="Hinzufügen">
+    <a id="button_red" style="margin: 10px 0px 0px 10px; text-decoration: none;" href="alle_abwesenheiten.php">zurück</a>
   </form>
-  <p style="color: white; margin: 38px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | c2018</p>
+  <p style="color: white; margin: 38px 0px 0px 20px; font-size: 12px;">developed by Luguco and LaetzPlaey | &copy;2018</p>
 </div>
 </body>
 </html>

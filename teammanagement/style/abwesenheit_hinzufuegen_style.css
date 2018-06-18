@@ -3,17 +3,6 @@ body {
   background-size: 3000px 1500px;
 }
 
-.logo_container {
-  width: 30%;
-  min-width: 450px;
-  margin: 0px auto 0px auto;
-}
-
-#logo {
-  height: 64px;
-  width: 64px;
-}
-
 .logodiv {
   margin: 25px auto 0px auto;
   width: 64px;
@@ -24,30 +13,20 @@ body {
   border-radius: 6px;
 }
 
-#errmsg {
-  color: white;
-  fonz-size: 18px;
-  border-style: solid;
-  border-width: 1px;
-  border-left-width: 10px;
-  border-radius: 4px;
-  background-color: red;
-  border-color: red;
-  border-left-color: #BD1818;  
-  width: 80%;
-  margin: 25px auto 0px auto;
-  padding: 2px 5px;
+#logo {
+  height: 64px;
+  width: 64px;
 }
 
 .maindiv {
   background-color: #302F2F;
   border-color: #302F2F;
-  width: 30%;
+  height: 350px;
   min-width: 500px;
-  margin: 35px auto 0px auto;
+  width: 30%;
+  margin: 45px auto 0px auto;
   border-style: solid;
   border-width: 2px;
-  border-bottom-width: 20px;
   border-radius: 20px;
 }
 
@@ -61,7 +40,7 @@ body {
   border-top-width: 5px;
   border-color: #0093D3;
   border-radius: 5px;
-  padding: 3px 45px 3px 45px;
+  padding: 3px 35px 3px 35px;
   transition: 500ms;
 }
 
@@ -71,32 +50,38 @@ body {
   cursor: pointer;
 }
 
-#button_green {
-  background-color: green;
+#button_red {
+  background-color: orange;
   font-size: 20px;
   color: white;
   border-style: solid;
   border-width: 1px;
   border-bottom-width: 5px;
   border-top-width: 5px;
-  border-color: #005900;
+  border-color: #DE8400;
   border-radius: 5px;
   padding: 3px 35px 3px 35px;
   transition: 500ms;
 }
 
-#button_green:hover {
-  border-color: green;
+#button_red:hover {
+  border-color: orange;
   transition: 500ms;
 }
 
-#title {
-  color: white;
-  margin: 30px 0px 0px 40px;
+#info_p {
+  color: white; 
+  margin: 80px 0px 0px 40px;
+  width: 78%;
+  border-color: white; 
+  border-style: solid; 
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px 8px 5px 8px;
 }
 
-#titleinfo {
+#ueberinfo1 {
   color: white;
-  margin: 5px 0px 0px 40px;
-  font-size: 16px;
+  font-size: 24px;
+  margin: 25px 0px 0px 40px;
 }

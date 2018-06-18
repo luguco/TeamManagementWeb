@@ -34,7 +34,7 @@ error_reporting(E_ALL) ;
   <h2 id="titleinfo">Management</h2>
   <form method="post" action="backend_handler/login.php">
       <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="text" name="username" id="username" class="fieldlogin" placeholder="Benutzername"><br>
-      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="password" name="password" id="password" class="fieldlogin" placeholder="Password" required minlength="6"><br>
+      <input style="width: 80%; height: 35px; margin: 10px 0px 0px 40px;" type="password" name="password" id="password" class="fieldlogin" placeholder="Password" required><br>
       <input id="button_blue" style ="margin: 10px 0px 0px 40px;" type="submit" name="login" id="login" class="loginbutton" value="Login"><br>
   </form>
   

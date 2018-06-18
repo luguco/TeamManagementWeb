@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: luguco
- * Date: 31.05.2018
- * Time: 19:03
- */
-
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
